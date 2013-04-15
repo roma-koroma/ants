@@ -104,12 +104,12 @@ public class GameModel
 		});
 
 
-		double delta = targets.get(0).getInitRadius();
+		Pizza biggest = targets.get(0);
+		double delta = biggest.getInitRadius() / biggest.getInitCapacity();
 
 		for(Pizza pizza : targets)
 		{
-			pizza.setBiteDelta(delta / sliceCount);
-			delta -= delta / targets.size();
+			pizza.setBiteDelta(delta);
 		}
 	}
 
