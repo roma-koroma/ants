@@ -24,8 +24,6 @@ public class GameModel
 	 */
 	private long delta = 1 * 60 * 1000;
 
-
-	//TODO переделать на Map<Subj, Action>
 	private Map<Ant, Move> movedAnts;
 	private Map<Ant, Kill> killedAnts;
 
